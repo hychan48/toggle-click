@@ -25,7 +25,11 @@ export default {
     }
   },
   methods:{
-    buttonClickEvent(){
+    // buttonClickEvent(){
+    async buttonClickEvent(){
+      //for testing my script... adding false delay. works perfectly
+      await new Promise(resolve => setTimeout(resolve, 1000));
+
       if(this.bLazy){
         this.bLazy = false;
         return window.document.body.setAttribute('class','black')
