@@ -7,7 +7,7 @@
 <template>
     <div>
       <button class="topleft" @click="buttonClickEvent" v-text="toggleName"
-              :title="'toggle color to '+(!bLazy ? 'grey': 'black')"/>
+              :title="'toggle color to '+(!bLazy ? 'very dark gray': 'black')"/>
     </div>
 </template>
 <script>
@@ -20,7 +20,7 @@ export default {
   },
   computed: {
     toggleName() {
-      let tmp = this.bLazy ? 'grey': 'black'
+      let tmp = this.bLazy ? 'very dark gray': 'black'
       return tmp
     }
   },
