@@ -25,10 +25,10 @@ export default {
     }
   },
   methods:{
-    // buttonClickEvent(){
-    async buttonClickEvent(){
-      //for testing my script... adding false delay. works perfectly
-      await new Promise(resolve => setTimeout(resolve, 1000));
+    buttonClickEvent(){
+    // async buttonClickEvent(){
+      //for testing my script... adding false delay. works perfectly. but probably need to debounce the call
+      // await new Promise(resolve => setTimeout(resolve, 1000));
 
       if(this.bLazy){
         this.bLazy = false;
