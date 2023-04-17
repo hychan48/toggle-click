@@ -24,7 +24,7 @@ WinActivate(ids[1])
 MouseGetPos &xpos, &ypos 
 ; Click on button / can also trigger f11 or something for fullscreen / or check for fullscreen
 ; MouseClick "left",41,111
-CX := 41
+CX := 100
 CY := 200
 
 initial_color := PixelGetColor(CX, CY)
