@@ -15,7 +15,8 @@
 ; ahk_pid 1176
 ; ahk_id 2363728
 active_id := WinGetID("A")
-ids := WinGetList("hychan48/toggle-click — Mozilla Firefox")
+; ids := WinGetList("hychan48/toggle-click — Mozilla Firefox")
+ids := WinGetList("toggle-click — Mozilla Firefox")
 ; ids := WinGetList("vdiadminq1-01:5900 (vdiadminq1-01) - VNC Viewer")
 ; todo would need to search for the title
 tooltip(ids[1])
@@ -37,7 +38,8 @@ StartTime := A_TickCount ; in milliseconds
 ; ToolTip sOutputvar
 ; FileAppend("%sOutputvar%.`n", "Test.txt")
 ; MouseClick "left",35,16
-MouseMove 35,16
+; MouseMove 35,16
+MouseMove CX,CY
 StartTime := A_TickCount
 MouseClick "left"
 
@@ -62,7 +64,7 @@ ElapsedTime := A_TickCount - StartTime
 ; ToolTip ElapsedTime
 ; A_Clipboard := ElapsedTime
 
-FileAppend(StartTime ":" ElapsedTime "`n", "log.txt")
+FileAppend("Firefox:" StartTime ":" ElapsedTime "`n", "log.txt")
 
 
 ; Return Back to current editor
