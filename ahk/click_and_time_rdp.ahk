@@ -15,8 +15,8 @@
 ; ahk_pid 1176
 ; ahk_id 2363728
 active_id := WinGetID("A")
-; ids := WinGetList("hychan48/toggle-click — Mozilla Firefox")
-ids := WinGetList("toggle-click — Mozilla Firefox")
+ids := WinGetList("VDIADMINQ1-01 - Remote Desktop Connection")
+; ids := WinGetList("toggle-click — Mozilla Firefox")
 ; ids := WinGetList("vdiadminq1-01:5900 (vdiadminq1-01) - VNC Viewer")
 ; todo would need to search for the title
 tooltip(ids[1])
@@ -64,7 +64,8 @@ ElapsedTime := A_TickCount - StartTime
 ; ToolTip ElapsedTime
 ; A_Clipboard := ElapsedTime
 
-FileAppend("Firefox:" StartTime ":" ElapsedTime "`n", "log.txt")
+; FileAppend("Firefox:" StartTime ":" ElapsedTime "`n", "log.txt")
+FileAppend("rdp x11:" StartTime ":" ElapsedTime "`n", "log.txt")
 
 
 ; Return Back to current editor
