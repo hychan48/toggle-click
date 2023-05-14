@@ -4,10 +4,19 @@
 active_id := WinGetID("A")
 WinActivate(active_id)
 MouseGetPos &ogxpos, &ogypos
-; FileDelete('log.txt')
 
-; FileAppend("X11VNC :" StartTime ":" ElapsedTime "`n", "log.txt")
+; WinActivate("ahk_pid 20944")
+ControlSend "echo hi{Enter}" ,,"ahk_pid 20944"
+
+; Send "psexec notepad{Enter}"
+; sleep 300
+; Send "{CtrlBreak}"
+; Send "^{CtrlBreak}"
+; SIGINT / SIGBREAK
+
+
 ; Return Back to current editor
+
 WinActivate(active_id)
 MouseMove ogxpos, ogypos
 Exit(0)
