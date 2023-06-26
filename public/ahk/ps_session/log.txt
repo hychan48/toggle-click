@@ -1,0 +1,9 @@
+GetControlId:12848030
+ControlGetClassNN:Chrome_RenderWidgetHostHWND1
+Dump:Type: 50004 (Edit) Name: "Terminal 2, PowerShell Extension Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help" LocalizedType: "edit"
+Name:Terminal 2, PowerShell Extension Run the command: Toggle Screen Reader Accessibility Mode for an optimized screen reader experience Use Alt+F1 for terminal accessibility help
+Value:
+IsReadOnly:0
+gettext:Chrome Legacy Window
+WinGetText:
+DocumentRange.GetText: O
